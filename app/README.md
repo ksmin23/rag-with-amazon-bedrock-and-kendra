@@ -46,3 +46,12 @@ The following screenshot shows the app with a couple of user questions.
   * [Use proprietary foundation models from Amazon SageMaker JumpStart in Amazon SageMaker Studio (2023-06-27)](https://aws.amazon.com/blogs/machine-learning/use-proprietary-foundation-models-from-amazon-sagemaker-jumpstart-in-amazon-sagemaker-studio/)
   * [LangChain](https://python.langchain.com/docs/get_started/introduction.html) - A framework for developing applications powered by language models.
   * [Streamlit](https://streamlit.io/) - A faster way to build and share data apps
+
+## Troubleshooting
+
+  * [Bedrock API call error: Your account is not authorized to invoke this API operation.](https://repost.aws/de/questions/QUksxQi1VkRfez5TvYF2sXhw/bedrock-api-call-error-your-account-is-not-authorized-to-invoke-this-api-operation)
+    <pre>
+    Error raised by bedrock service: An error occurred (AccessDeniedException) when calling the InvokeModelWithResponseStream operation: Your account is not authorized to invoke this API operation.
+    </pre>
+  * [Identity-based policy examples for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html)
+  * [Troubleshooting Amazon Bedrock identity and access](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_troubleshoot.html)
