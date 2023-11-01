@@ -1,5 +1,5 @@
 
-# QA with LLM and RAG (Retrieval Augumented Generation)
+# QA with LLM and RAG (Retrieval Augumented Generation) powered by Amazon Bedrock and Kendra
 
 > :heavy_exclamation_mark: This project is a simplified version based on the original project in the blog post, [Quickly build high-accuracy Generative AI applications on enterprise data using Amazon Kendra, LangChain, and large language models (2023-05-03)](https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
 
