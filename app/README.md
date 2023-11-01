@@ -53,5 +53,6 @@ The following screenshot shows the app with a couple of user questions.
     <pre>
     Error raised by bedrock service: An error occurred (AccessDeniedException) when calling the InvokeModelWithResponseStream operation: Your account is not authorized to invoke this API operation.
     </pre>
+  * [Amazon Bedrock - Add model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#add-model-access)
   * [Identity-based policy examples for Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html)
   * [Troubleshooting Amazon Bedrock identity and access](https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_troubleshoot.html)

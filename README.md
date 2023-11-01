@@ -13,6 +13,14 @@ The overall architecture is like this:
 
 ![rag_with_bedrock_kendra_arch](./cdk_stacks/rag_with_bedrock_kendra_arch.svg)
 
+### Prerequisites
+
+Before using a foundational model in Bedrock your account needs to be granted access first.
+
+Follow the steps here to add models: [Amazon Bedrock - Add model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#add-model-access)
+
+Some models require some additional information and take some time before you are granted access. Once the model shows "Access granted" on the Model Access page, you should be able to call the `invoke_model()` function without the error.
+
 ### Overall Workflow
 
 1. Deploy the cdk stacks (For more information, see [here](./cdk_stacks/README.md)).
@@ -26,6 +34,7 @@ The overall architecture is like this:
 
 ### References
 
+  * [Amazon Bedrock - Add model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#add-model-access)
   * [Amazon Bedrock Workshop](https://github.com/aws-samples/amazon-bedrock-workshop)
   * [Quickly build high-accuracy Generative AI applications on enterprise data using Amazon Kendra, LangChain, and large language models (2023-05-03)](https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
     * [(github) Amazon Kendra Retriver Samples](https://github.com/aws-samples/amazon-kendra-langchain-extensions/tree/main/kendra_retriever_samples)

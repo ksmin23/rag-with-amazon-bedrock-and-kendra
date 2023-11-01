@@ -1,7 +1,7 @@
 
 # RAG Application CDK Python project!
 
-![rag_with_kendra_arch](./rag_with_kendra_arch.svg)
+![rag_with_bedrock_kendra_arch](./rag_with_bedrock_kendra_arch.svg)
 
 This is an QA application with LLMs and RAG project for CDK development with Python.
 
