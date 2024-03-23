@@ -15,15 +15,15 @@ from langchain.prompts import PromptTemplate
 from langchain.llms.bedrock import Bedrock
 
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+  HEADER = '\033[95m'
+  OKBLUE = '\033[94m'
+  OKCYAN = '\033[96m'
+  OKGREEN = '\033[92m'
+  WARNING = '\033[93m'
+  FAIL = '\033[91m'
+  ENDC = '\033[0m'
+  BOLD = '\033[1m'
+  UNDERLINE = '\033[4m'
 
 
 MAX_HISTORY_LENGTH = 5
@@ -83,7 +83,7 @@ def build_chain():
 
 
 def run_chain(chain, prompt: str, history=[]):
-   return chain({"question": prompt, "chat_history": history})
+  return chain({"question": prompt, "chat_history": history})
 
 
 if __name__ == "__main__":
