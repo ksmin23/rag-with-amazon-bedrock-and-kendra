@@ -1,6 +1,6 @@
-import random
-import string
-import uuid
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+# vim: tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 import aws_cdk as cdk
 
@@ -9,7 +9,6 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-random.seed(47)
 
 class KendraDataSourceSyncStack(Stack):
 

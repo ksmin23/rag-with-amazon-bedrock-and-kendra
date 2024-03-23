@@ -1,16 +1,16 @@
-# import string
-# import random
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+# vim: tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 import aws_cdk as cdk
 
 from aws_cdk import (
   Stack,
-#   aws_ec2,
   aws_iam,
-  aws_kendra,
-  aws_s3 as s3
+  aws_kendra
 )
 from constructs import Construct
+
 
 class KendraIndexStack(Stack):
 

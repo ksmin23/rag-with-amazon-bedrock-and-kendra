@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
+# vim: tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
 from urllib.parse import urlparse
 
 import aws_cdk as cdk
@@ -9,6 +13,7 @@ from aws_cdk import (
   aws_s3 as s3
 )
 from constructs import Construct
+
 
 class KendraDataSourceSyncLambdaStack(Stack):
 
