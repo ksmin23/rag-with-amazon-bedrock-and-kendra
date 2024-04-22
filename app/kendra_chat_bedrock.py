@@ -9,10 +9,10 @@ import os
 
 import boto3
 
-from langchain_community.retrievers import AmazonKendraRetriever
+from langchain_aws import AmazonKendraRetriever
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
-from langchain_community.chat_models import BedrockChat
+from langchain_aws import ChatBedrock as BedrockChat
 
 class bcolors:
   HEADER = '\033[95m'
