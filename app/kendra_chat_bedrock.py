@@ -12,7 +12,7 @@ import boto3
 from langchain_community.retrievers import AmazonKendraRetriever
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
-from langchain.llms.bedrock import Bedrock
+from langchain_community.chat_models import BedrockChat
 
 class bcolors:
   HEADER = '\033[95m'
@@ -32,17 +32,18 @@ MAX_HISTORY_LENGTH = 5
 def build_chain():
   region = os.environ["AWS_REGION"]
   kendra_index_id = os.environ["KENDRA_INDEX_ID"]
-  model_id = os.environ.get('BEDROCK_MODEL_ID', 'anthropic.claude-v2')
+  model_id = os.environ.get('BEDROCK_MODEL_ID', 'anthropic.claude-v2:1')
 
-  bedrock_endpoint_url = f'https://bedrock-runtime.{region}.amazonaws.com'
   bedrockruntime_client = boto3.client('bedrock-runtime',
-    region_name=region, endpoint_url=bedrock_endpoint_url)
+    region_name=region)
 
-  llm = Bedrock(
+  #XXX: Support for claude v3 models. #18630
+  # https://github.com/langchain-ai/langchain/pull/18630
+  llm = BedrockChat(
     model_id=model_id,
     client=bedrockruntime_client,
     model_kwargs={
-      "max_tokens_to_sample": 512,
+      "max_tokens": 512,
       "temperature": 0,
       "top_p": 0.9
     }
