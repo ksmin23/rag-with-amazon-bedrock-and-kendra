@@ -64,5 +64,6 @@ class KendraDataSourceStack(Stack):
 
     self.kendra_data_source_id = kendra_data_source.attr_id
 
-    cdk.CfnOutput(self, 'KendraDataSourceId', value=self.kendra_data_source_id,
+    cdk.CfnOutput(self, 'KendraDataSourceId',
+      value=self.kendra_data_source_id,
       export_name=f"{self.stack_name}-KendraDataSourceId")

@@ -1,8 +1,6 @@
 
 # QA with LLM and RAG (Retrieval Augumented Generation) powered by Amazon Bedrock and Kendra
 
-> :heavy_exclamation_mark: This project is a simplified version based on the original project in the blog post, [Quickly build high-accuracy Generative AI applications on enterprise data using Amazon Kendra, LangChain, and large language models (2023-05-03)](https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/)
-
 This project is a Question Answering application with Large Language Models (LLMs) and Amazon Kendra. An application using the RAG(Retrieval Augmented Generation) approach retrieves information most relevant to the user’s request from the enterprise knowledge base or content, bundles it as context along with the user’s request as a prompt, and then sends it to the LLM to get a GenAI response.
 
 LLMs have limitations around the maximum word count for the input prompt, therefore choosing the right passages among thousands or millions of documents in the enterprise, has a direct impact on the LLM’s accuracy.
@@ -28,7 +26,7 @@ Some models require some additional information and take some time before you ar
 2. Open SageMaker Studio and then open a new terminal.
 3. Run the following commands on the terminal to clone the code repository for this project:
    ```
-   git clone https://github.com/ksmin23/rag-with-amazon-bedrock-kendra.git
+   git clone --depth=1 https://github.com/ksmin23/rag-with-amazon-bedrock-kendra.git
    ```
 4. Run Streamlit application. (For more information, see [here](./app/README.md))
 

@@ -8,7 +8,7 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    ![](./sagemaker-studio-launcher-screenshot.png)
 2. Run the following commands on the terminal to clone the code repository for this post and install the Python packages needed by the application:
    ```
-   git clone https://github.com/ksmin23/rag-with-amazon-bedrock-kendra.git
+   git clone --depth=1 https://github.com/ksmin23/rag-with-amazon-bedrock-kendra.git
    cd rag-with-amazon-bedrock-kendra/app
    python -m venv .env
    source .env/bin/activate
@@ -33,9 +33,9 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    ```
 5. You can access the app in a new browser tab using a URL that is similar to your Studio domain URL. For example, if your Studio URL is `https://d-randomidentifier.studio.us-east-1.sagemaker.aws/jupyter/default/lab?` then the URL for your Streamlit app will be `https://d-randomidentifier.studio.us-east-1.sagemaker.aws/jupyter/default/proxy/8501/app` (notice that `lab` is replaced with `proxy/8501/app`). If the port number noted in the previous step is different from 8501 then use that instead of 8501 in the URL for the Streamlit app.
 
-The following screenshot shows the app with a couple of user questions. (e.g., `What are the versions of XGBoost supported by Amazon SageMaker?`)
+   The following screenshot shows the app with a couple of user questions. (e.g., `What are the versions of XGBoost supported by Amazon SageMaker?`)
 
-![qa-with-llm-and-rag](./qa-with-bedrock-llm-and-rag.png)
+   ![qa-with-llm-and-rag](./qa-with-bedrock-llm-and-rag.png)
 
 ## References
 

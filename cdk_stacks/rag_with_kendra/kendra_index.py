@@ -73,4 +73,6 @@ class KendraIndexStack(Stack):
 
     self.kendra_index_id = kendra_index.attr_id
 
-    cdk.CfnOutput(self, 'KendraIndexId', value=self.kendra_index_id, export_name=f"{self.stack_name}-KendraIndexId")
+    cdk.CfnOutput(self, 'KendraIndexId',
+      value=self.kendra_index_id,
+      export_name=f"{self.stack_name}-KendraIndexId")

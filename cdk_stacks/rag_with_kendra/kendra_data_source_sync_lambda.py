@@ -75,6 +75,7 @@ class KendraDataSourceSyncLambdaStack(Stack):
 
     self.kendra_ds_sync_lambda_arn = kendra_data_source_sync_lambda_fn.function_arn
 
-    cdk.CfnOutput(self, 'KendraDSSyncLambdaFnName', value=kendra_data_source_sync_lambda_fn.function_name,
+    cdk.CfnOutput(self, 'KendraDSSyncLambdaFnName',
+      value=kendra_data_source_sync_lambda_fn.function_name,
       export_name=f"{self.stack_name}-KendraDSSyncLambdaFnName")
 
